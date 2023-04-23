@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../imgss"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "files"
+	}
+}

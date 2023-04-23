@@ -1,0 +1,1610 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family-zeyada: 'Great Vibes', cursive;
+    --font-family-josefin:'Josefin Sans', sans-serif;
+    --font-family-poppins:'Poppins', sans-serif;
+    --color--light-brown:#c49b63;
+    --color--dark-brown:#241a0d;
+    --color--border-brown:#8b6228c5;
+    --color--border-bottom:#d5b78ab3 ;
+    --color-border-verybottom:#d5b78a2a ;
+    --color--lightdark-brown:#b08b58;
+    --font--grey:#ffffff;
+    --para--color:#bdbaba;
+    --background:url(/imgs/imgg2/pexels-blank-space-3275404.jpg);
+    /* --background:url(/imgs/imgss/digital-art-abstract-black-lines-minimalism-5k-q3.jpg); */
+    --background-forsmall:url(/imgs/imgss4/pexels-photo-3846220.jpeg);
+    --background--transparent:#2715119c;
+    --background--transparenttwo:#150a006f;
+    /* font-family: 'Zeyada', cursive; */
+    /* overflow-x: hidden; */
+}
+.header-move{
+ animation: header-move 1s ease;
+}
+@keyframes header-move{
+from{transform: translateY(20%);}
+to{transform: translateY(0%);}
+}
+
+body{
+  background-blend-mode: overlay;
+  background-image: var(--background);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+   scroll-behavior: smooth;
+   background-color:var(--background--transparent);
+}
+.reveal-active{
+  animation: move .7s linear;
+}
+@keyframes move{
+  from{
+      opacity: 0.8;
+      transform: translateY(30%);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0%);
+  }
+}
+.reveal-active-two{
+  animation: movetwo 2s linear;
+}
+@keyframes move{
+  from{
+      opacity: 0;
+      transform: translateY(10%);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0%);
+  }
+}
+img{
+    object-fit: cover;
+    object-position: center;
+}
+.maincontainerFirst .Container .item{
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  background-color: var(--background--transparenttwo);
+  background-image:url(/imgs/imgss4/wall3.jpeg);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+a,li{
+    color: #ffff;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    font-family:var(--font-family-poppins);
+    font-weight: 600;
+    font-size:.8rem;
+}
+h3{
+    font-family: var(--font-family-sans-serif);
+}
+.maincontainerFirst{
+    position: relative;
+    overflow-x: hidden;
+}
+.shownav{
+  animation: shownav .8s linear;
+}
+@keyframes shownav{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+.maincontainerFirst .header{
+    width:100%;
+    top:0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    transition: all .6s ease;
+    border-bottom: 1px solid var(--color--border-bottom);
+    background-color: #000000a5;
+    z-index: 999;
+}
+.maincontainerFirst .header .headerItems .allList .lists li:active {
+color: var(--color--light-brown);
+}
+.maincontainerFirst .header .headerItems .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  /* background-color: #322513; */
+  /* margin-left: 10vw; */
+}
+.maincontainerFirst .header .headerItems .container .items{
+  cursor: pointer;
+  display: none;
+  flex-direction: row;
+}
+.maincontainerFirst .header .headerItems .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    /* background-color: #322513; */
+    /* margin-left: 10vw; */
+}
+.maincontainerFirst .header .headerItems .container .items{
+    cursor: pointer;
+    display: none;
+    flex-direction: row;
+}
+.maincontainerFirst .header .headerItems .container .toggle{
+    display: flex;
+    padding-right: .6rem;
+    flex-direction: column;
+}
+.add .lineone{
+  transition: .5s ease;
+  transform:rotate(42deg);
+  }
+  .add .linethree{
+    transition: .5s ease;
+      transform:rotate(-42deg);
+      }
+      .add .linetwo{
+         opacity: 0;
+          }
+          .maincontainerFirst .header .headerItems span {
+            height: 1px;
+            width: 19px;
+            margin-bottom: 5px;
+            background-color: #ffffff;
+            transform-origin: left;
+          }
+.maincontainerFirst .header .headerItems{
+    width:80%;
+    margin: auto;
+    padding: 2rem 0 0 0;
+    justify-content: space-between;
+}
+.maincontainerFirst .header .headerItems .lists{
+    display: flex;
+    /* background-color: #000000; */
+}
+.maincontainerFirst .header .headerItems .allList{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    flex-direction: row;
+}
+.maincontainerFirst .header .headerItems .dropd{
+  position: relative;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}.maincontainerFirst .header .headerItems .lists .shopicon{
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  }
+  .maincontainerFirst .header .headerItems .lists .shopicon .number-of-items{
+    position: absolute;
+    top: 15%;
+    right:-15%;
+    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+   background-color: #ffa91e;
+   color: #000000;
+   border-radius: 100%;
+    }
+.maincontainerFirst .header .headerItems .dropd::after{
+content: '\f0d7';
+font-family: "Font Awesome 5 Free"; 
+font-weight: 900; 
+font-size: .7rem;
+padding-left: 1.3rem;
+}
+.maincontainerFirst .header .headerItems .dropd ul{
+  width: 10rem;
+  position: absolute;
+ top:100%;
+ left: 0;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #100f0f;
+  display: none;
+  animation:menu .5s ease;
+  border-top: 5px solid black;
+  border-bottom:5px solid black;padding-bottom: 1rem;}
+  @keyframes menu {
+    from{opacity:0;transform: translateY(-5%);}
+    to{opacity:1;transform: translateY(0%);}
+  }
+  .maincontainerFirst .header .headerItems .dropd ul div{
+    margin-top: 1rem;
+  }
+.maincontainerFirst .header .headerItems .dropd ul div a{
+  font-size: .8rem;
+  font-weight: 200;
+  color: var(--para--color);
+}
+.maincontainerFirst .header .headerItems .dropd ul div a:hover{
+  color: #ffffff;
+}
+.maincontainerFirst .Container .item .content{
+ width: 50%;
+ top:42%;
+  left:25%;
+  right:25%;
+  color: #ffff;
+  font-family: var(--font-family-sans-serif);
+  animation: animate 1s ease;
+  position: absolute;
+}
+@keyframes animate{
+from{
+    opacity: 0;
+    transform: translateY(30%);
+}
+to{
+    opacity: 1;
+    transform: translateY(0%);
+}
+}.maincontainerFirst .Container .item .content h1{
+  font-size: 2.3rem;
+  font-weight: 800;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.maincontainerFirst .Container .item .content .btn{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  align-items: flex-start;
+  width: 30%;
+  font-weight: 400;
+  font-family: var(--font-family-sans-serif);
+  font-size: .9rem;
+}
+.maincontainerFirst .Container .item .content .btn p{
+margin: 0 1rem;
+text-align: center;
+}
+.maincontainerFirst .Container .item .content .btn .bt:first-child{
+  border-bottom: 1px solid var(--color--light-brown);
+  color: white;
+  font-size: .9rem;  
+}
+.maincontainerFirst .Container .item .content .btn .bt:last-child{
+color: #ffffffb0;
+}
+.maincontainerFirst .header .headerItems .container .logo i{
+  display: none;
+}
+.maincontainerFirst .header .headerItems .allList .logo i{
+  display: block;
+}
+.maincontainerFirst .header .headerItems .allList .lists a{
+padding:1.6rem;
+}
+.maincontainerFirst .header .headerItems .allList .lists li:hover{
+ color:var(--color--light-brown);
+  }
+.maincontainerFirst .Container .item .content{
+ width: 50%;
+ top:42%;
+  left:25%;
+  right:25%;
+  color: #ffff;
+  font-family: var(--font-family-sans-serif);
+  animation: animate 1s ease;
+  position: absolute;
+}
+@keyframes animate{
+from{
+    opacity: 0;
+    transform: translateY(30%);
+}
+to{
+    opacity: 1;
+    transform: translateY(0%);
+}
+}
+.maincontainerFirst .Container .item .content h1{
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.maincontainerFirst .Container .item .content .btn{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  align-items: flex-start;
+  width: 10rem;
+  font-weight: 400;
+  font-family: var(--font-family-sans-serif);
+}
+.maincontainerFirst .Container .item .content .btn .bt:first-child{
+  border-bottom: 1px solid var(--color--light-brown);
+  font-size: 1rem;
+}
+.maincontainerFirst .Container .item .content .btn .bt:last-child{
+color: #ffffffb0;
+}
+.maincontainerSecond .container .firstitem .item{
+    display: none;
+    width: 100vw;
+  }
+  .maincontainerSecond .container .firstitem .item img{
+    display: none;
+    width: 100%;
+  }
+  .menuactive{
+    display: block;
+  }
+  .maincontainerSecond .container{
+    background-image: var(--background);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  }
+  .maincontainerSecond .container .subcontainer{
+    display: flex;
+    width: 100%;
+  }
+  .maincontainerSecond .container .seconditem {
+    width: 40%;
+    margin: 7rem 0;
+      }
+  .maincontainerSecond .container .firstitem {
+    width: 50%;
+    background: url(/imgs/imgss/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .maincontainerSecond .container .seconditem .content{
+    background-color:#080602b4; 
+    padding: 2rem 2rem;
+width: 100%;
+margin-left: -8%;
+/* ba
+ckground-color: black; */
+  }
+  .maincontainerSecond .container .seconditem .topheading{
+    color: #c49b63;
+    font-size: 3rem;
+    margin-bottom: -1.1rem;
+    font-family: var(--font-family-zeyada);
+  }
+  .maincontainerSecond .container .seconditem  .bottomheading{
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-family: var(--font-family-josefin);
+  }
+  .maincontainerSecond .container .seconditem p{
+    line-height: 1.8rem;
+    font-family: var(--font-family-sans-serif);
+    color: var(--para--color);
+    font-weight: 200;
+  }
+  
+  .maincontainerninth .topcontainer {
+    width: 100%;
+    background-image:var(--background-forsmall);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .maincontainerninth .topcontainer .container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 7rem;
+    }
+    .maincontainerninth .topcontainer .container .containerone{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin:4rem auto 3rem auto;
+    }
+    .maincontainerninth .topcontainer .container .containerone .heading{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .maincontainerninth .topcontainer .container .containerone .heading h3:first-child{
+      margin-bottom: -36px;
+      font-size: 3.5rem;
+      font-family: var(--font-family-zeyada);
+      color: var(--color--light-brown);
+      z-index: 2;
+    }
+    .maincontainerninth .topcontainer .container .containerone .heading h3:last-child{
+      font-size: 2.6rem;
+      font-family: var(--font-family-sans-serif);
+      margin-bottom: .5rem;
+      color: white;
+      z-index: 1;
+    }
+    .maincontainerninth .topcontainer .container .containerone p{
+      font-size: 1rem;
+      line-height: 2.1rem;
+      color:var(--para--color);
+      text-align: center;
+      padding: .9rem 0rem;
+      font-family: var(--font-family-sans-serif);
+    }
+    .maincontainerninth .topcontainer .container .containerone{
+      width: 40%;
+    }
+    .maincontainerninth .topcontainer .container .containertwo{
+      width: 100%;
+    }
+    .maincontainerninth .topcontainer .container .containertwo .testimonialContainer{
+      width: 100%;
+      display: flex;
+      align-items: end;
+    }
+    .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card{
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      height: auto;
+      align-items: start;
+      background-color: var(--color--light-brown);
+      transition: all .5s ease;
+    }
+    .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card:hover{
+     box-shadow: 1px 0px 15px 1px var(--color--lightdark-brown);
+     transform: translatey(-1%);
+    }
+    .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card.too{
+      background-color: var(--color--lightdark-brown);
+    }
+    
+    .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .topcontent p{
+      font-size: 0.9rem;
+      font-family: var(--font-family-poppins);
+      color: #ffffff;
+      line-height: 1.7rem;
+    }
+    .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent{
+      display: flex;
+      width: 11rem;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
+    .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent img{
+     width: 2.6rem;
+     height: 2.6rem;
+     border-radius: 100%;
+    }
+    .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent .about .name{
+     color: #ffffff;
+     font-family: var(--font-family-josefin);
+     font-weight: 400;
+     font-size: 1rem;
+    }
+    .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent .about .job{
+      color: #ffffff;
+      font-family: var(--font-family-sans-serif);
+       font-weight:lighter;
+       font-size: 0.8rem;
+     }
+     .maincontainerfourth{
+        width:100%;
+      }
+      .maincontainerfourth .topcontainer{
+        width:100%;
+        background-image: var(--background);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      }
+      .maincontainerfourth .topcontainer .subcontainer{
+        margin: 5rem 0;
+        padding: 6rem 0;
+        display: flex;
+        width:75%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        align-items: end;
+        width: 45%;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div{
+        font-family: var(--font-family-poppins);
+        text-align: end;
+        color: #fffcfc;
+        font-size: .9rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div a{
+       font-weight: 600;
+       color:#ffff;
+       border: 2px solid var(--color--light-brown);
+       padding: .7rem .8rem;
+       transition: .5s ease;
+       font-family: var(--font-family-sans-serif);
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div p{
+        font-weight: 400;
+        color: var(--para--color);
+        font-size: 14px;
+       }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div a:hover{
+        color: #ffff;
+        background-color: var(--color--light-brown);
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div.menu{
+        font-family: var(--font-family-sans-serif);
+        font-size: 3rem;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem .heading{
+      position: relative;
+      padding-top: 1.5rem;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div.disc{
+        font-family: var(--font-family-zeyada);
+        font-size: 3rem;
+        right: 0;
+        position: absolute;
+        color: var(--color--light-brown);
+        bottom: 25%;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .seconditem{
+        width: 50%;
+        display: flex;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .seconditem .item{
+        width: 47%;
+        padding: .3rem;
+      }
+      /* .maincontainerfourth .topcontainer .subcontainer .seconditem .item.item1{
+        margin: 2rem  1rem 1rem 1rem;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .seconditem .item.item2{
+        margin: 1rem 1rem 3rem 1rem;
+      } */
+      .maincontainerfourth .topcontainer .subcontainer .seconditem img{
+        width: 100%;
+      }
+
+      .maincontainerfourth{
+        width:100%;
+      }
+      .maincontainerfourth .topcontainer{
+        width:100%;
+        background-image: var(--background);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      }
+      .maincontainerfourth .topcontainer .subcontainer{
+        margin: 5% 0;
+        padding: 6% 0;
+        display: flex;
+        width:75%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        align-items: end;
+        width: 40%;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div{
+        font-family: var(--font-family-poppins);
+        text-align: end;
+        color: #fffcfc;
+        font-size: .9rem;
+        line-height: 1.5rem;
+        margin-bottom: 1.6rem;
+        font-weight: 600;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div a{
+       font-weight: 600;
+       color:#ffff;
+       border: 2px solid var(--color--light-brown);
+       padding: .7rem .8rem;
+       transition: .5s ease;
+       font-family: var(--font-family-sans-serif);
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div p{
+        font-weight: 400;
+        color: var(--para--color);
+        font-size: 14px;
+       }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div a:hover{
+        color: #ffff;
+        background-color: var(--color--light-brown);
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div.menu{
+        font-family: var(--font-family-sans-serif);
+        font-size: 3rem;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem .heading{
+      position: relative;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .firstitem div.disc{
+        font-family: var(--font-family-zeyada);
+        font-size: 3rem;
+        right: 0;
+        position: absolute;
+        color: var(--color--light-brown);
+        bottom: 1.6rem;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .seconditem{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .seconditem .item{
+        width: 50%;
+        height: 12rem;
+      }
+      .maincontainerfourth .topcontainer .subcontainer .seconditem img{
+        width: 100%;
+        height: 100%;
+      }
+      .maincontainerfifth .container{
+        width:100%;
+        background-color: #00000045;
+        background-image: var(--background-forsmall);
+        background-blend-mode: overlay;
+        background-position: top;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .maincontainerfifth .container .subcontainer{
+        display: flex;
+        justify-content: space-between;
+        width:70%;
+        margin: auto;
+        padding: 6rem 0;
+      }
+      .maincontainerfifth .container .subcontainer .item{
+        display: flex;
+        flex-direction: column;
+        width:25%;
+        align-items: center;
+        text-align: center !important;
+      }
+      .maincontainerfifth .container .subcontainer .item .discription{
+      color: var(--font--grey);
+      font-family: var(--font-family-poppins);
+      }
+      .maincontainerfifth .container .subcontainer .item .counter{
+        padding: 1.8rem 0 1rem 0;
+        font-size: 1.6rem;
+        color: var(--color--light-brown);
+        font-family: var(--font-family-josefin);
+      }
+      .maincontainerfifth .container .subcontainer .item .icon{
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+      }
+      .maincontainerfifth .container .subcontainer .item .icon .ic{
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+         left: 0;
+         top:0;
+         border: 1px solid var(--color--light-brown);
+         transition: .8s ease;
+      } 
+      .maincontainerfifth .container .subcontainer .item i{
+        font-size: 2.3rem;
+        padding: 1rem;
+        color: var(--color--light-brown);
+        position: absolute;
+        top: 4px;
+        left: 4px;
+      } 
+      .maincontainerfifth .container .subcontainer :hover .ic{
+      transform: rotate(135deg);
+      background-color:var(--color--light-brown);
+      }
+      .maincontainerfifth .container .subcontainer :hover i{
+        color: var(--color--dark-brown);
+        }
+
+      .maincontainersixth .topcontainer{
+        width: 100%;
+        background-image: var(--background);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+      }
+      .maincontainersixth .topcontainer .container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin:auto;
+      }
+      .maincontainersixth .topcontainer .container .firstcontainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6rem 0 3rem 0rem;
+      }
+      .maincontainersixth .topcontainer .container .firstcontainer .contents{
+        width: 53%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+      }
+      .maincontainersixth .topcontainer .container .firstcontainer .contents .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .maincontainersixth .topcontainer .container .firstcontainer .contents .heading .top{
+        margin-bottom: -36px;
+        font-size: 3.5rem;
+        font-family: var(--font-family-zeyada);
+      }
+      .maincontainersixth .topcontainer .container .firstcontainer .contents .heading .bottom{
+        font-size: 2.6rem;
+        font-family: var(--font-family-sans-serif);
+        margin-bottom: .5rem;
+      }
+      .maincontainersixth .topcontainer .container .firstcontainer .contents div{
+        font-size: 2rem;
+        color: #fffcfc;
+        text-align: start;
+      }
+      .maincontainersixth .topcontainer .container p{
+        font-size: 1rem;
+        line-height: 2.1rem;
+        color: var(--para--color);
+        text-align: center;
+        padding: .9rem 0rem;
+        font-family: var(--font-family-sans-serif);
+      }
+      .maincontainersixth .topcontainer .container .secondcontainer {
+        width: 100%;
+        padding: 0rem 0 6rem 0rem;
+      }
+      .maincontainersixth .topcontainer .container .secondcontainer .container{
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+       flex-direction: row;
+      }
+      .maincontainersixth .topcontainer .container .secondcontainer .container .item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       width:22%;
+       }  
+       .maincontainersixth .topcontainer .container .secondcontainer .container .item:hover .content .heading{
+        color: var(--color--light-brown);
+       }
+       .maincontainersixth .topcontainer .container .secondcontainer .container .item .image{
+        width: 100%;
+        height: 14rem;
+        overflow: hidden;
+      }
+       .maincontainersixth .topcontainer .container .secondcontainer .container .item:hover img{
+        transform: scale(1.1);
+       }
+       .maincontainersixth .topcontainer .container .secondcontainer .container .item img{
+        width: 100%;
+       height: 100%;
+       object-fit: cover;
+       object-position: center;
+       transition: all .5s ease;
+       }
+       .maincontainersixth .topcontainer .container .secondcontainer .container .item .heading{
+       color: #ffffff;
+       font-size: 1.3rem;
+       font-family: var(--font-family-sans-serif);
+       margin: 1.5rem 0 0 0rem;
+       transition: all .5s ease;
+       }
+       .maincontainersixth .topcontainer .container .secondcontainer .container .item .price{
+        color: #ffffff;
+        font-size: 1rem;
+        font-family: var(--font-family-sans-serif);
+        }
+        .maincontainersixth .topcontainer .container .secondcontainer .container .item .addto{
+          color: #ffffff;
+          font-size: .8rem;
+          padding: .4rem;
+          color: var(--color--light-brown);
+          border: 1px solid var(--color--light-brown);
+          width: 8rem;
+          text-align: center;
+          margin: 1rem auto 0 auto;
+          font-family: var(--font-family-sans-serif);
+          transition: .5s ease;
+          }
+          .maincontainersixth .topcontainer .container .secondcontainer .container .item .addto:hover{
+           background-color: var(--color--light-brown);
+           color: #ffff;
+            }
+footer .maincontainer{
+    width: 100%;
+    background-color: #141010;
+  }
+  footer .maincontainer .subcontainer{
+width: 80%;
+display: flex;
+justify-content: space-between;
+margin: auto;
+padding: 3rem 0;
+  }
+  footer .maincontainer .subcontainer .containerone{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+      }
+      .forwhite{
+        color: var(--font--grey);
+        font-size: 1rem; 
+        font-family: var(--font-family-sans-serif);
+        padding: .5rem 0;
+      }
+      footer .maincontainer .subcontainer .tiny{
+        padding-top: 0;
+      }
+      .forgrey{
+        font-size: 1rem;
+            font-family: var(--font-family-sans-serif);
+            line-height: 1.8rem;
+            color: var(--para--color);
+            padding-top: 1rem;
+            padding-bottom: .5rem;
+      }
+      footer .maincontainer .subcontainer .containertwo .size{
+        font-size: .9rem;
+        font-weight: 400;
+        transition: all .5s ease;
+          }
+          footer .maincontainer .subcontainer .containertwo .discribtion{
+            width: 80%;
+              }
+          footer .maincontainer .subcontainer .containertwo .item{
+            width: 100%;
+            display: flex;
+            align-items: center;
+              }
+          footer .maincontainer .subcontainer .containertwo .item .img{
+            width: 5rem;
+            height: 4.5rem;
+            overflow: hidden;
+            margin-right: 1rem;
+              }
+              footer .maincontainer .subcontainer .containertwo .item  .img img{
+                width: 100%;
+                height: 100%;
+                transition: all .5s ease;
+                  }
+                  footer .maincontainer .subcontainer .containertwo .item:hover .discribtion .size{
+                  color: var(--color--light-brown);  
+                      }
+                      footer .maincontainer .subcontainer .containertwo .item:hover .img img{
+                        transform: scale(1.1);
+                            }
+      footer .maincontainer .subcontainer .icons p{
+        font-size: .7rem;
+        font-weight: 100;
+          }
+      footer .maincontainer .subcontainer .heading{
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+          }
+          footer .maincontainer .subcontainer .cont{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+          }
+          footer .maincontainer .subcontainer .cont .iconone{
+            display: flex;
+            width: 100%;
+            margin-top: 2rem;
+          }
+          
+          footer .maincontainer .subcontainer .cont .iconone i{
+            font-size: 1.5rem;
+            color: var(--font--grey);
+            background-color: rgba(33, 33, 33, 0.559);
+            border-radius: 100%;
+            width: 2.8rem;
+            height: 2.8rem;
+            padding: .6rem .4rem;
+           text-align: center;
+           transition: all .5s ease;
+           margin-right: 1rem;
+          }
+          footer .maincontainer .subcontainer .cont .iconone i:hover{
+            font-size: 1.5rem;
+            color: var(--color--light-brown);
+            transform: translateY(-5%);
+          }
+          footer .maincontainer .subcontainer .icons i {
+            font-size: .6rem;
+            margin: 0 5px 0 7px;
+          }
+      footer .maincontainer .subcontainer .containerone{
+        width: 26%;
+          }
+          footer .maincontainer .subcontainer .containertwo{
+            width: 30%;
+              }
+              footer .maincontainer .subcontainer .containerthree{
+                width: 12%;
+                  }
+                  footer .maincontainer .subcontainer .containerthree a{
+                    padding-top: 0;
+                    margin-top: .5rem;
+                    font-weight: 400;
+                    transition: all .5s ease;
+                      }
+                      footer .maincontainer .subcontainer .containerthree a:hover{
+                        color: var(--color--light-brown);
+                        transform: translateY(-2%);
+                          }
+                  footer .maincontainer .subcontainer .containerfour{
+                    width: 20%;
+                      }
+                      footer .maincontainer .subcontainer .containerfour a:hover{
+                        color: rgb(255, 255, 255);
+                          }
+
+                          @media(max-width:1300px){
+                            .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card {
+                              padding: 1rem;
+                            }
+                            .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .topcontent p {
+                              font-size: 0.8rem;
+                              line-height: 1.4rem;
+                            }
+                            .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent {
+                              width: 9rem;
+                              margin-top: .8rem;}
+                              .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent .about .name {
+                                font-size: .8rem;
+                              }
+                              .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent .about .job {
+                                font-size: 0.7rem;
+                              }
+                           }
+
+@media(max-width:1000px){
+  .maincontainerFirst .header .headerItems .lists .shopicon .number-of-items {
+    top: -45%;
+  }
+  .maincontainerFirst .header .headerItems .dropd{
+    align-items: start;
+    margin-left: -15px;
+    margin-bottom: 1.8rem;
+  }
+  .maincontainerFirst .header .headerItems .dropd::after{
+   padding-top: 4px;
+  }
+  .maincontainerFirst .header .headerItems .dropd ul {
+    width: 10rem;
+    display: flex;
+    margin-left: -35px;
+    position: static;
+    width: 90%;
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
+  .maincontainerFirst .header .headerItems .container {
+    padding: 1rem 4rem;
+  }
+  .maincontainerFirst .header .headerItems .container .logo i::after{
+    content: 'Gochew Grill';
+    padding-left: .7rem;
+    background: #121FCF;
+   background: linear-gradient(to right, #c29a5d 0%, #e6d6ca 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .maincontainerFirst .header .headerItems .container .logo i{
+    display: block;
+    background: linear-gradient(to right, #a37641 0%, #fffdfb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .maincontainerFirst .header .headerItems .allList .logo i{
+    display: none;
+  }
+  .maincontainerFirst .header .headerItems .container .items{
+  display: flex;
+}
+  .slowin{
+ animation: slowin .8s ease-out;
+  }
+  @keyframes slowin{
+from{
+opacity: 0;
+transform: translatex(10%);
+}
+to{
+opacity: 1;
+transform: translatex(0%);
+}
+ }
+ .maincontainerFirst .header .headerItems .allList{
+  transition: 2 ease;
+      }
+      .maincontainerFirst .header .headerItems {
+        background-color: #000000;
+      }
+      .maincontainerFirst .header .headerItems .allList .lists{
+        padding-left: 4rem;
+  display: none;
+       flex-direction: column;
+       background-color: #000000;
+       width: 100%;
+      }
+  .maincontainerFirst .header{
+      width: 0%;
+  }
+  .maincontainerFirst .header .headerItems .container {
+      display: flex;
+  }
+  .maincontainerFirst .header .headerItems .allList .lists a{
+    margin-bottom: 2rem;
+    padding: 0rem 2rem 0 0;
+  }
+  .maincontainerFirst .header .headerItems{
+      width: 100vw;
+      padding-left: 10%;
+  }
+.maincontainerSecond .container .seconditem .content{
+    margin-left:-22%;
+  }
+  .maincontainerSecond .container .seconditem{
+    width: 50%;
+    margin: 5rem 0;
+  }
+  .maincontainerninth .topcontainer .container .containerone{
+    width: 50%;
+  }
+  .maincontainerninth .topcontainer .container .containerone {
+    margin: 2.5rem auto 2rem auto;
+  }
+  .maincontainerninth .topcontainer .container .containerone{
+    width: 60%;
+  }
+  .maincontainerninth .topcontainer .container .containerone .heading h3:first-child{
+    margin-bottom: -30px;
+    font-size: 3rem;
+  }
+  .maincontainerninth .topcontainer .container .containerone .heading h3:last-child{
+    font-size: 2rem;
+  }
+  .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card {
+    padding: 0.6rem;
+  }
+  .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .topcontent p {
+    font-size: 0.6rem;
+    line-height: 1.1rem;
+  }
+  .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent img {
+    width: 2rem;
+    height: 2rem;
+  }    
+  .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent .about .name {
+    font-size: .7rem;
+  }
+  .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent .about .job {
+    font-size: 0.6rem;
+  }
+  .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent {
+    width: 8rem;
+  }
+  .maincontainerfourth .topcontainer .subcontainer {
+    margin: 2rem 0;
+    padding: 5rem 0;
+    width: 80%;
+    margin: auto;
+  }
+  .maincontainerfourth .topcontainer .subcontainer .seconditem .item {
+    width: 50%;
+  }
+  .maincontainerfourth .topcontainer .subcontainer .seconditem{
+    width: 55%;
+  }
+  .maincontainerfourth .topcontainer .subcontainer .firstitem div {
+    margin-bottom: 1.1rem;
+  }
+  .maincontainerfourth .topcontainer .subcontainer .firstitem div p {
+    font-size: 15px;
+  }
+  .maincontainerfourth .topcontainer .subcontainer .firstitem div.menu{
+      font-size: 2.5rem;
+    }
+    .maincontainerfourth .topcontainer .subcontainer .firstitem div.disc{
+      right: 0;
+      bottom: 1.5rem;
+    }
+    .maincontainersixth .topcontainer .container .firstcontainer{
+      padding: 5rem 0 2rem 0rem;
+    }
+    .maincontainersixth .topcontainer .container .firstcontainer .contents{
+      width: 67%;
+    }
+    .maincontainersixth .topcontainer .container .firstcontainer .contents .heading .top{
+      margin-bottom: -32px;
+      font-size: 3.2rem;
+    }
+    .maincontainersixth .topcontainer .container .firstcontainer .contents .heading .bottom{
+      font-size: 2.3rem;
+    }
+    .maincontainersixth .topcontainer .container p{
+      line-height: 1.4rem;
+      font-size: .9rem;
+      padding: .4rem 0rem;
+    }
+    .maincontainersixth .topcontainer .container .secondcontainer {
+      padding: 0rem 0 5rem 0rem;
+    }
+     .maincontainersixth .topcontainer .container .secondcontainer .container .item .image {
+      height: 9rem;
+    }
+     .maincontainersixth .topcontainer .container .secondcontainer .container .item .heading{
+     font-size: 1rem;
+     margin: 1rem 0 0 0rem;
+     }
+     .maincontainersixth .topcontainer .container .secondcontainer .container .item .price{
+      font-size: 1.2rem;
+      }
+      .maincontainersixth .topcontainer .container .secondcontainer .container .item .addto{
+        width: 6rem;
+        }
+
+    .maincontainerseventh .topcontainer{
+      padding: 2.5rem 0 4rem 0;
+    }
+    .maincontainerseventh .topcontainer .slider{
+     flex-wrap:wrap
+    }
+    .maincontainerseventh .topcontainer .slider .slide{
+      width: 50%;
+    }
+footer .maincontainer .subcontainer {
+width: 90%;
+}
+footer .maincontainer .subcontainer .containerone {
+width: 20%;
+}
+footer .maincontainer .subcontainer .containerthree {
+width: 14%;
+}
+footer .maincontainer .subcontainer .heading {
+font-size: 1rem;
+margin-bottom: 1.2rem;
+}
+.forgrey {
+font-size: .8rem;
+line-height: 1.3rem;
+padding-top: 0rem;
+}
+.forwhite {
+font-size: .8rem;
+padding: .5rem 0 0 0;
+}
+footer .maincontainer .subcontainer .containerthree a {
+padding-top: 0;
+margin-top: .5rem;
+}
+footer .maincontainer .subcontainer .containertwo .item .img {
+width: 3.5rem;
+height: 3rem;
+margin-right: 1rem;
+}
+footer .maincontainer .subcontainer .containertwo .size {
+font-size: .8rem;
+}
+footer .maincontainer .subcontainer .icons p {
+font-size: .6rem;
+}
+}
+
+@media(max-width:700px){
+    .maincontainerFirst .header .headerItems .allList .lists{
+      padding-left: 10%;
+    }
+      .maincontainerSecond .container .subcontainer{
+        display: flex;
+       flex-direction: column;
+      }
+      .maincontainerSecond .container .seconditem {
+        width: 100%;
+        margin: 0;;
+          }
+          .maincontainerSecond .container .seconditem .content{
+            width: 100%;
+            margin: 0%;
+          }
+          .maincontainerSecond .container .firstitem .item{
+            display: block;
+          }
+          .maincontainerSecond .container .firstitem .item img{
+            display: block;
+          }
+          
+.maincontainerninth .topcontainer .container {
+    margin-bottom: 5rem;
+  }
+  .maincontainerninth .topcontainer .container .containerone p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .maincontainerninth .topcontainer .container .containertwo .testimonialContainer {
+    flex-direction: column;
+  }
+  .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card {
+    padding: 1rem;
+    width: 100%;
+  }
+  .maincontainerninth .topcontainer .container .containertwo .testimonialContainer .card .bottomcontent {
+    width: 7.5rem;
+  }
+  .maincontainerfourth .topcontainer .subcontainer {
+    flex-direction: column;
+  }
+  .maincontainerfourth .topcontainer .subcontainer .firstitem {
+   width: 100%;
+   align-items: flex-start;
+ }
+ .maincontainerfourth .topcontainer .subcontainer .firstitem div{
+   text-align: start;
+ }
+ .maincontainerfourth .topcontainer .subcontainer .firstitem div.disc{
+  left: 0;
+ }
+ .maincontainerfourth .topcontainer .subcontainer .seconditem {
+   justify-content: space-between;
+   width: 100%;
+ }
+ .maincontainerfourth .topcontainer .subcontainer .seconditem .item {
+   width: 49%;
+ }
+
+   .maincontainersixth .topcontainer .container .firstcontainer .contents{
+     width: 94%;
+   }
+   .maincontainersixth .topcontainer .container .secondcontainer .container{
+     width: 100%;
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
+   .maincontainersixth .topcontainer .container .secondcontainer .container .item{
+     width: 47%;
+     padding: 1rem 0 2rem 0;
+   }
+   .maincontainersixth .topcontainer .container .secondcontainer .container .item:not(:first-child) {
+     padding: 1rem 0 2rem 0;
+   }
+   .maincontainersixth .topcontainer .container .secondcontainer {
+     padding: 0rem 0 2rem 0rem;
+   }
+   .maincontainerfifth .container .subcontainer {
+     flex-wrap: wrap;
+   }
+   .maincontainerfifth .container .subcontainer .item{  
+   flex-wrap: wrap;
+ }
+   .maincontainerfifth .container .subcontainer .item .icon .ic {
+     width: 4rem;
+     height: 4rem;
+   }
+   .maincontainerfifth .container .subcontainer .item .icon i {
+     font-size:1.5rem
+   }
+   .main
+   .maincontainerfifth .container .subcontainer{
+    flex-wrap: wrap;
+     width:80%;
+     padding: 3rem 0;
+   }
+   .maincontainerfifth .container .subcontainer .item{
+     width:48%;
+     padding-top: 1.3rem;
+   }
+   .maincontainerfifth .container .subcontainer .item .counter{
+     font-size: 1.2rem;
+     padding: 1.5rem  0rem 0rem 0rem;
+   }      
+      footer .maincontainer .subcontainer{
+        flex-wrap: wrap;
+        justify-content: unset;
+      }
+      footer .maincontainer .subcontainer .heading{
+        padding-bottom:1rem ;
+      }
+      footer .maincontainer .subcontainer .containerone{
+        width: 46%;
+        padding-right: 2rem;
+          }
+          footer .maincontainer .subcontainer .containerthree {
+            width: 46%;
+            padding-top: 2rem;
+          }
+          footer .maincontainer .subcontainer .containertwo{
+            width: 50%;
+              }
+              footer .maincontainer .subcontainer .containerfour{
+                padding-top: 2rem;
+                  }
+              footer .maincontainer .subcontainer .containertwo .item .img {
+                width: 5rem;
+                height: 4.5rem;
+                margin-right: 1rem;
+        }
+        
+        .forgrey {
+          font-size: .9rem;
+          line-height: 1.3rem;
+          padding-top: 0rem;
+        }
+        .forwhite {
+          padding: 1rem 0 0 0;
+        }
+}
+
+
+@media(max-width:500px){
+  .maincontainerFirst .header .headerItems .container {
+      justify-content:space-between;
+    }
+    .maincontainerFirst .Container .item .content .btn p{
+      margin: 0 1rem;
+    }
+    .maincontainerSecond .container .seconditem .content {
+        background-color: #080602b4;
+        padding: 2rem 1rem;
+      }
+      .maincontainerSecond .container .seconditem .bottomheading {
+       margin-bottom:1.5rem;
+}
+.maincontainerninth .topcontainer .container .containerone {
+    width: 90%;
+  }
+  
+  .maincontainerfourth .topcontainer .subcontainer{
+    width: 90%;
+    margin: auto;
+  }
+  .maincontainerfourth .topcontainer .subcontainer .seconditem .item {
+    width: 100%;
+  }
+  .maincontainerfifth .container .subcontainer .item .counter {
+    font-size: 1.2rem;
+  }
+       .maincontainersixth .topcontainer .container p{
+        padding-top: 0.5rem;
+        line-height: 1.3rem;
+        font-size: 0.9rem;
+      }
+      .maincontainersixth .topcontainer .container{
+        width: 90%;
+       }
+       .maincontainersixth .topcontainer .container .firstcontainer .contents{
+        width: 100%;
+      }  .maincontainersixth .topcontainer .container .firstcontainer .contents .heading .top{
+        margin-bottom: -23px;
+        font-size: 2.2rem;
+      }
+      .maincontainersixth .topcontainer .container .firstcontainer .contents .heading .bottom{
+        font-size: 1.6rem;
+      }
+      .maincontainersixth .topcontainer .container .secondcontainer .container .item .heading{
+        font-size: .8rem;
+        }
+        .maincontainersixth .topcontainer .container .secondcontainer .container .item .price{
+         font-size: 1rem;
+         }
+         .maincontainersixth .topcontainer .container .secondcontainer .container .item .addto{
+           width: 6rem;
+           font-size: .8rem;
+           }
+
+    footer .maincontainer .subcontainer{
+      flex-direction: column;
+        }
+    footer .maincontainer .subcontainer .cont{
+      width: 100%;
+      padding-top: .5rem;
+        }
+        footer .maincontainer .subcontainer .heading {
+          padding-bottom: 0rem;
+        }
+        footer .maincontainer .subcontainer .containerthree a {
+          padding-bottom: 0.5;
+        }
+        footer .maincontainer .subcontainer {
+          padding: 2rem 0 3rem 0;
+        }
+        footer .maincontainer .subcontainer .cont .iconone{
+          width: 40%;
+        }
+        footer .maincontainer .subcontainer .cont .iconone i{
+          font-size: 1rem;
+          width: 2.3rem;
+          height: 2.3rem;
+          padding: .6rem .4rem;
+        }
+}
+
+
+@media(max-width:300px){    .maincontainerFirst .header .headerItems .container{
+  justify-content:unset;
+  flex-direction: column;
+}
+.maincontainerFirst .header .headerItems .container .logo{
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.maincontainerFirst .header .headerItems .container .items{
+  padding-bottom: 1rem;
+  width: 100%;
+
+}
+      .maincontainerFirst .Container .item .content .btn{
+        width: 90%;
+        font-size: .8rem;
+      }
+      .maincontainerFirst .Container .item .content .btn .bt:first-child{
+        font-size: .8rem;  
+    }
+      .maincontainerFirst .Container .item .content h1 {
+        font-size: 1.8rem;}
+      .maincontainerFirst .Container .item .content {
+        width: 100%;
+        right:0%;
+        left: 0;
+      }
+      .maincontainerSecond .container .seconditem h3{
+        font-size: 1rem;
+        }
+        .maincontainerSecond .container .seconditem p {
+          line-height: 1.5rem;
+          font-size: .8rem;
+        }
+        
+.maincontainerninth .topcontainer .container .containerone .heading h3:first-child{
+    margin-bottom: -18px;
+    font-size: 1.6rem;
+  }
+  .maincontainerninth .topcontainer .container .containerone .heading h3:last-child{
+    font-size: 1.4rem;
+  }
+  .maincontainerninth .topcontainer .container .containerone p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 0;
+  }
+  .maincontainerfourth .topcontainer .subcontainer .firstitem div.disc{
+    left:0;
+    text-align: start;
+    font-size: 2rem;
+ }
+ .maincontainerfourth .topcontainer .subcontainer .firstitem div.menu {
+   font-size: 2rem;
+ }
+ .maincontainerfourth .topcontainer .subcontainer {
+   flex-direction: column;
+ }
+ .maincontainerfourth .topcontainer .subcontainer .firstitem p{
+ text-align: start;
+ }
+ .maincontainerfourth .topcontainer .subcontainer .firstitem {
+  width: 100%;
+  align-items: flex-start;
+}
+.maincontainerfourth .topcontainer .subcontainer .firstitem div {
+  text-align: start;
+}
+.maincontainerfourth .topcontainer .subcontainer .seconditem {
+  justify-content: space-between;
+  width: 100%;
+}
+.maincontainerfourth .topcontainer .subcontainer .seconditem .item {
+  width: 100%;
+}
+
+  
+  .maincontainersixth .topcontainer .container p{
+   padding-top: 0;
+ }
+  .maincontainersixth .topcontainer .container .firstcontainer{
+   padding: 2rem 0 0 0;
+ }
+ .maincontainersixth .topcontainer .container .firstcontainer .contents .heading .top{
+   margin-bottom: -19px;
+   font-size: 2rem;
+   text-align: start;
+   left: 0;
+ }
+ .maincontainersixth .topcontainer .container .firstcontainer .contents .heading .bottom{
+   font-size: 1.3rem;
+ }
+ .maincontainersixth .topcontainer .container .secondcontainer .container{
+   width: 100%;
+   flex-direction: column;
+ }
+ .maincontainersixth .topcontainer .container .secondcontainer .container .item{
+   width: 100%;
+   padding: 1rem 0 1rem 0;
+ }
+ .maincontainersixth .topcontainer .container .secondcontainer .container .item .heading{ 
+   font-size: 1rem;
+ margin-bottom:.5rem;
+}
+ .maincontainersixth .topcontainer .container .secondcontainer .container .item:not(:first-child) {
+   padding: 1rem 0 1rem 0;
+ }
+ .maincontainersixth .topcontainer .container .secondcontainer {
+   padding: 0rem 0rem 2rem 0rem;
+ }
+ 
+ .maincontainerfifth .container .subcontainer{
+   flex-wrap: wrap;
+    width:80%;
+    padding: 3rem 0;
+  }
+  .maincontainerfifth .container .subcontainer .item{
+    width:100%;
+    padding-top: 1.3rem;
+  }
+    }
+  @media(max-width:250px){ .maincontainerFirst .header .headerItems .container{
+    padding: 1rem;
+  } 
+    .maincontainerninth .topcontainer .container .containerone .heading h3:last-child{
+        font-size: 1.2rem;
+      }
+      .maincontainersixth .topcontainer .container .firstcontainer .contents .heading .top {
+        margin-bottom: -16px;
+        font-size: 1.5rem;}
+
+      .maincontainersixth .topcontainer .container .firstcontainer .contents .heading .bottom {
+        font-size: 1rem;
+      }
+  }
