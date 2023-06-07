@@ -122,6 +122,24 @@ h3{
 .maincontainerFirst .header .headerItems .allList .lists li:active {
 color: var(--color--light-brown);
 }
+.maincontainerFirst .header .headerItems .allList .logo i::after {
+
+    content: 'Gochew Grill';
+    padding-left: .7rem;
+    background: #121FCF;
+    background: linear-gradient(to right, #c29a5d 0%, #e6d6ca 100%);
+        background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}.maincontainerFirst .header .headerItems .allList .logo i {
+  display: block;
+  background: linear-gradient(to right, #a37641 0%, #fffdfb 100%);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .maincontainerFirst .header .headerItems .container {
   display: flex;
   justify-content: space-between;
@@ -478,8 +496,9 @@ padding: 3rem 0;
                             display: none;
                           }
                           .maincontainerFirst .header .headerItems .container .items{
-                          display: flex;
-                        }
+                            display: flex;
+                            align-items: flex-end;
+                          }
                           .slowin{
                          animation: slowin .8s ease-out;
                           }

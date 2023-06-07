@@ -4,29 +4,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-family-zeyada: 'Great Vibes', cursive;
-    --font-family-josefin:'Josefin Sans', sans-serif;
-    --font-family-poppins:'Poppins', sans-serif;
-    --color--light-brown:#c49b63;
-    --color--dark-brown:#241a0d;
-    --color--border-brown:#8b6228c5;
-    --color--border-bottom:#d5b78ab3 ;
-    --color-border-verybottom:#d5b78a2a ;
-    --color--lightdark-brown:#b08b58;
-    --font--grey:#ffffff;
-    --para--color:#bdbaba;
-    --background:url(/imgs/imgg2/pexels-blank-space-3275404.jpg);
-    /* --background:url(/imgs/imgss/digital-art-abstract-black-lines-minimalism-5k-q3.jpg); */
-    --background-forsmall:url(/imgs/imgss4/pexels-photo-3846220.jpeg);
-    --background--transparent:#2715119c;
-    --background--transparenttwo:#58555567;
-    /* font-family: 'Zeyada', cursive; */
-    /* overflow-x: hidden; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-family-zeyada: 'Great Vibes', cursive;
+  --font-family-josefin:'Josefin Sans', sans-serif;
+  --font-family-poppins:'Poppins', sans-serif;
+  --color--light-brown:#c49b63;
+  --color--dark-brown:#241a0d;
+  --color--border-brown:#8b6228c5;
+  --color--border-bottom:#d5b78ab3 ;
+  --color-border-verybottom:#d5b78a2a ;
+  --color--lightdark-brown:#b08b58;
+  --font--grey:#ffffff;
+  --para--color:#bdbaba;
+  --background:url(/imgs/imgss4/bg4.jpg);
+  /* --background:url(/imgs/imgss/digital-art-abstract-black-lines-minimalism-5k-q3.jpg); */
+  --background-forsmall:url(/imgs/imgss4/pexels-photo-3846220.jpeg);
+  --background--transparent:#361837cb;
+  --background--transparenttwo:#58555567;
+  /* font-family: 'Zeyada', cursive; */
+  /* overflow-x: hidden; */
 }
 .header-move{
  animation: header-move 1s ease;
@@ -108,6 +108,24 @@ h3{
     background-position: center;
     background-size: cover;
     position: relative;
+}.maincontainerFirst .header .headerItems .allList .logo i {
+  display: block;
+  background: linear-gradient(to right, #a37641 0%, #fffdfb 100%);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.maincontainerFirst .header .headerItems .allList .logo i::after {
+
+    content: 'Gochew Grill';
+    padding-left: .7rem;
+    background: #121FCF;
+    background: linear-gradient(to right, #c29a5d 0%, #e6d6ca 100%);
+        background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 .maincontainerFirst .header{
     width:100%;
@@ -572,7 +590,8 @@ padding: 3rem 0;
   display: none;
 }
 .maincontainerFirst .header .headerItems .container .items{
-display: flex;
+  display: flex;
+  align-items: flex-end;
 }
 .slowin{
 animation: slowin .8s ease-out;

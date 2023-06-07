@@ -19,11 +19,11 @@
     --color--lightdark-brown:#b08b58;
     --font--grey:#ffffff;
     --para--color:#bdbaba;
-    --background:url(/imgs/imgg2/pexels-blank-space-3275404.jpg);
+    --background:url(/imgs/imgss4/bg4.jpg);
     /* --background:url(/imgs/imgss/digital-art-abstract-black-lines-minimalism-5k-q3.jpg); */
     --background-forsmall:url(/imgs/imgss4/pexels-photo-3846220.jpeg);
     --background--transparent:#2715119c;
-    --background--transparenttwo:#150a006f;
+    --background--transparenttwo:#3d3d3dab;
     /* font-family: 'Zeyada', cursive; */
     /* overflow-x: hidden; */
 }
@@ -129,6 +129,24 @@ color: var(--color--light-brown);
   padding: 0;
   /* background-color: #322513; */
   /* margin-left: 10vw; */
+}
+.maincontainerFirst .header .headerItems .allList .logo i::after {
+
+    content: 'Gochew Grill';
+    padding-left: .7rem;
+    background: #121FCF;
+    background: linear-gradient(to right, #c29a5d 0%, #e6d6ca 100%);
+        background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}.maincontainerFirst .header .headerItems .allList .logo i {
+  display: block;
+  background: linear-gradient(to right, #a37641 0%, #fffdfb 100%);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .maincontainerFirst .header .headerItems .container .items{
   cursor: pointer;
@@ -257,26 +275,27 @@ padding:1.6rem;
 }
 .maincontainerFirst .header .headerItems .allList .lists li:hover{
  color:var(--color--light-brown);
-  } .maincontainerFirst .Container .item .content{
-    width: 50%;
-    top:42%;
-     left:25%;
-     right:25%;
-     color: #ffff;
-     font-family: var(--font-family-sans-serif);
-     animation: animate 1s ease;
-     position: absolute;
- }
- @keyframes animate{
-   from{
-       opacity: 0;
-       transform: translateY(30%);
-   }
-   to{
-       opacity: 1;
-       transform: translateY(0%);
-   }
- }.maincontainerFirst .Container .item .content h1{
+  }
+  .maincontainerFirst .Container .item .content{
+   width: 50%;
+   top:42%;
+    left:25%;
+    right:25%;
+    color: #ffff;
+    font-family: var(--font-family-sans-serif);
+    animation: animate 1s ease;
+    position: absolute;
+}
+@keyframes animate{
+  from{
+      opacity: 0;
+      transform: translateY(30%);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0%);
+  }
+}.maincontainerFirst .Container .item .content h1{
   font-size: 2.3rem;
   font-weight: 800;
   text-align: center;
@@ -305,10 +324,6 @@ text-align: center;
 .maincontainerFirst .Container .item .content .btn .bt:last-child{
 color: #ffffffb0;
 }
- .maincontainerFirst .Container .item .content .btn .bt:last-child{
- color: #ffffffb0;
- font-size: .9rem;
- }
 footer .maincontainer{
     width: 100%;
     background-color: #141010;
@@ -481,8 +496,9 @@ padding: 3rem 0;
                             display: none;
                           }
                           .maincontainerFirst .header .headerItems .container .items{
-                          display: flex;
-                        }
+                            display: flex;
+                            align-items: flex-end;
+                          }
                           .slowin{
                          animation: slowin .8s ease-out;
                           }
@@ -602,12 +618,13 @@ padding: 3rem 0;
                             }
                     }
                       @media(max-width:500px){
+                        .maincontainerFirst .Container .item .content .btn p{
+                          margin: 0 1rem;
+                        }
+
                         .maincontainerFirst .header .headerItems .container {
                           justify-content: space-between;
                           padding: 1rem 2rem;
-                        }
-                        .maincontainerFirst .Container .item .content .btn p{
-                          margin: 0 1rem;
                         }
                         footer .maincontainer .subcontainer{
                           flex-direction: column;
@@ -637,23 +654,16 @@ padding: 3rem 0;
                     }
                     @media(max-width:300px){
                       .maincontainerFirst .header .headerItems .container{
-                          justify-content:unset;
-                        }
-                        .maincontainerFirst .header .headerItems .container{
-                          justify-content:unset;
-                          flex-direction: column;
-                        }
-                        .maincontainerFirst .header .headerItems .container .logo{
-                          padding-bottom: 1rem;
-                          width: 100%;
-                        }
-                        .maincontainerFirst .header .headerItems .container .items{
-                          padding-bottom: 1rem;
-                          width: 100%;
-                        }
-                        .maincontainerFirst .Container .item .content .btn{
-                          width: 90%;
-                          font-size: .8rem;
+                        justify-content:unset;
+                        flex-direction: column;
+                      }
+                      .maincontainerFirst .header .headerItems .container .logo{
+                        padding-bottom: 1rem;
+                        width: 100%;
+                      }
+                      .maincontainerFirst .header .headerItems .container .items{
+                        padding-bottom: 1rem;
+                        width: 100%;
                       }
                       .maincontainerFirst .Container .item .content .btn .bt:first-child{
                         font-size: .8rem;  
@@ -665,11 +675,16 @@ padding: 3rem 0;
                         right:0%;
                         left: 0;
                       }
-                    }
+                      .maincontainerFirst .header .headerItems .container{
+                          justify-content:unset;
+                        }
+                        .maincontainerFirst .Container .item .content .btn{
+                          width: 90%;
+                          font-size: .8rem;
+                      }}
                     @media(max-width:250px){ .maincontainerFirst .header .headerItems .container{
                       padding: 1rem;
-                    }
-                      .maincontainerFirst .Container .item .content .btn{
-                        width: 100%;
+                    } .maincontainerFirst .header .headerItems .container{
+                      padding: 1rem;
                     }
                     }

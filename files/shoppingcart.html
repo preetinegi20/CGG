@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="checkout.css" class="rel">
-    <script src="single.js" defer></script>
+    <link rel="stylesheet" href="cart.css" class="rel">
+    <script src="shopping.js" defer></script>
     <script src="https://kit.fontawesome.com/0de5fa71c4.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -41,8 +41,8 @@
                             <ul>
                                 <div class="bar"><a href="shop.html">Shop </a></div>
                                 <div class="bar"><a href="single.html">Single product </a></div>
-                                <div class="bar"><a href="cart.html">Cart</a></div>
-                                <div class="bar"> <a href="#">Checkout</a></div>
+                                <div class="bar"><a href="#">Cart</a></div>
+                                <div class="bar"> <a href="chekcout.html">Checkout</a></div>
                             </ul>
                         </li>
                         <a href="contact.html"><li class="list">CONTACT</li></a>
@@ -57,14 +57,61 @@
 
                     <!-- <img src="/imgs/pexels-dmitriy-ganin-7538070.jpg"> -->
                     <div class="content">
-                        <h1>CHECK OUT</h1>
+                        <h1>CART</h1>
                         <div class="btn">
                             <p><a href="bonap.html" class="button1 bt">HOME</a></p>
-                            <p class="button2 bt">CHECK OUT</p>
+                            <p class="button2 bt">CART</p>
                         </div>
                    </div>
 
             </div>
+        </div>
+    </section>
+
+    <section class="cart">
+        <div class="maincontainer">
+            <div class="container">
+                    <table>
+                        <thead class="head">
+                            <tr class="row reveal">
+                                <th></th>
+                                <th></th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody class="itemcontainer">
+                            <tr class="row">
+                                <td class="remove"><i class="cross fa-solid fa-xmark"></i></td>
+                                <td class="product"><div class="image"><img src="/imgs/imgss4/espresso-martini_0-9a0cca2.webp"></div></td>
+                                <td class="prod-name"><div class="text"><div class="name">HOT CAPECCINO</div><div class="disc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, placeat.</p></div></div></td>
+                                <td class="price"><div class="pp">$40.8</div></td>
+                                <td class="quantity"><div class="input"><input type="number" class="inp" value="0"></div></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="remove"><i class="cross fa-solid fa-xmark"></i></td>
+                                <td class="product"><div class="image"><img src="/imgs/imgss4/coconut-shrimp-1-600.webp"></div></td>
+                                <td class="prod-name"><div class="text"><div class="name">HOT CAPECCINO</div><div class="disc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, placeat.</p></div></div></td>
+                                <td class="price"><div class="pp">$44.8</div></td>
+                                <td class="quantity"><div class="input"><input type="number" class="inp" value="0"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="total">
+                        <div class="total-amt">
+                            <div class="text heading">CARD TOTAL</div>
+                            <div class="text"><span>SubTotal</span><span>$200.60</span></div>
+                            <div class="text"><span>Discount</span><span>$20.10</span></div>
+                            <div class="text"><span>Delivery</span><span>$00.0</span></div>
+                            <div class="text"><span>Total</span><span class="sub">$0</span></div>
+                        </div>
+                        <div class="checkout">
+                            <a href="#">Proceed To Checkout</a>
+                        </div>
+                    </div>
+            </div>
+           
         </div>
     </section>
     <footer>
